@@ -4,11 +4,14 @@ import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 
-export default defineConfig({
+const repoName = "mui-cianjur-profile-website";
+
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? `/${repoName}/` : "/",
   plugins: [
     tailwindcss(),
     tanstackStart({ customRouter: true }),
     react(),
     tsconfigPaths(),
   ],
-});
+}));

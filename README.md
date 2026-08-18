@@ -73,6 +73,22 @@ src/
 public/                # aset publik statis
 ```
 
+## GitHub Pages
+
+Untuk men-deploy project ini ke GitHub Pages, ikuti langkah berikut:
+
+1. Pastikan repository sudah dipush ke GitHub.
+2. Buka tab Settings > Pages di repository GitHub.
+3. Pilih Source: GitHub Actions.
+4. Push ke branch `main`.
+5. Workflow di `.github/workflows/deploy-pages.yml` akan membangun dan deploy otomatis.
+
+Setelah deploy, website dapat diakses di:
+
+```text
+https://<username>.github.io/mui-cianjur-profile-website/
+```
+
 ## Lokasi
 
 Alamat kantor MUI Kabupaten Cianjur:
