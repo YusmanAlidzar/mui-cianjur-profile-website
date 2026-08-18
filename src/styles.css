@@ -1,0 +1,174 @@
+@import "tailwindcss";
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — MUI Kabupaten Cianjur
+ * Hijau (#1C8A57) dominan, putih sebagai whitespace, emas sebagai aksen terbatas.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Amiri", serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-brand-900: var(--brand-900);
+  --color-brand-700: var(--brand-700);
+  --color-brand-600: var(--brand-600);
+  --color-brand-500: var(--brand-500);
+  --color-brand-100: var(--brand-100);
+  --color-brand-50: var(--brand-50);
+  --color-gold: var(--gold);
+
+  --shadow-soft: 0 4px 16px oklch(0.3231 0.0584 168.33 / 0.08);
+  --shadow-lift: 0 12px 28px oklch(0.3231 0.0584 168.33 / 0.14);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  --brand-900: oklch(0.3231 0.0584 168.33);
+  --brand-700: oklch(0.471 0.1038 157.23);
+  --brand-600: oklch(0.5615 0.1238 157.29);
+  --brand-500: oklch(0.654 0.1381 157.37);
+  --brand-100: oklch(0.9538 0.0239 159.15);
+  --brand-50: oklch(0.9807 0.0107 158.85);
+  --gold: oklch(0.728 0.138 89.73);
+
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.2781 0.0296 256.85);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2781 0.0296 256.85);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2781 0.0296 256.85);
+  --primary: oklch(0.5615 0.1238 157.29);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.9816 0.0017 247.84);
+  --secondary-foreground: oklch(0.2781 0.0296 256.85);
+  --muted: oklch(0.9816 0.0017 247.84);
+  --muted-foreground: oklch(0.551 0.0234 264.36);
+  --accent: oklch(0.9538 0.0239 159.15);
+  --accent-foreground: oklch(0.471 0.1038 157.23);
+  --destructive: oklch(0.5771 0.2152 27.33);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9265 0.0052 247.88);
+  --input: oklch(0.9265 0.0052 247.88);
+  --ring: oklch(0.5615 0.1238 157.29);
+
+  --sidebar: oklch(0.9807 0.0107 158.85);
+  --sidebar-foreground: oklch(0.2781 0.0296 256.85);
+  --sidebar-primary: oklch(0.5615 0.1238 157.29);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.9538 0.0239 159.15);
+  --sidebar-accent-foreground: oklch(0.471 0.1038 157.23);
+  --sidebar-border: oklch(0.9265 0.0052 247.88);
+  --sidebar-ring: oklch(0.5615 0.1238 157.29);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-600);
+    outline-offset: 2px;
+  }
+}
+
+@utility container-page {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (min-width: 640px) {
+    padding-inline: 1.5rem;
+  }
+}
+
+@utility hero-gradient {
+  background-image: linear-gradient(
+    135deg,
+    var(--brand-900) 0%,
+    var(--brand-700) 55%,
+    var(--brand-600) 100%
+  );
+}
+
+@utility card-lift {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+  &[data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+}
