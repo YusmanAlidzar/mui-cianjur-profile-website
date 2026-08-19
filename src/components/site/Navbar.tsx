@@ -7,7 +7,7 @@ import logoMui from "@/assets/logo-mui.webp";
 const menu = [
   { label: "Beranda", href: "#beranda" },
   { label: "Tentang", href: "#tentang" },
-  { label: "Layanan", href: "#layanan" },
+  // { label: "Layanan", href: "#layanan" },
   { label: "Fatwa", href: "#fatwa" },
   { label: "Berita", href: "#berita" },
   { label: "Kontak", href: "#kontak" },
