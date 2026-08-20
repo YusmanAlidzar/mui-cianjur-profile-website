@@ -26,7 +26,6 @@ export function Footer() {
                   src={logoMui}
                   alt="Logo Majelis Ulama Indonesia"
                   className="h-full w-full" />
-                {/* <Moon className="h-5 w-5" aria-hidden /> */}
               </span>
               <span className="font-[family-name:var(--font-display)] text-lg font-bold text-white">
                 MUI Cianjur

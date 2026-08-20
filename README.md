@@ -10,7 +10,6 @@ Proyek ini merupakan website profil untuk MUI Kabupaten Cianjur yang menampilkan
 
 - Hero section dengan branding institusi
 - Navigasi responsif
-- Informasi layanan MUI
 - Section fatwa dan berita
 - Profil lembaga dan kontak
 - Peta lokasi kantor MUI Cianjur

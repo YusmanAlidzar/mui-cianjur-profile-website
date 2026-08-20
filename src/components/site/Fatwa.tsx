@@ -5,21 +5,21 @@ import { Reveal } from "./Reveal";
 const fatwa = [
   {
     no: "No. 04/MUI-CJR/VI/2026",
-    title: "Panduan Penyembelihan Hewan Kurban di Rumah Potong Desa",
+    title: "[DUMMY] Panduan Penyembelihan Hewan Kurban di Rumah Potong Desa",
     kategori: "Ibadah",
-    tanggal: "12 Juni 2026",
+    tanggal: "39 Agustus 2045",
   },
   {
     no: "No. 03/MUI-CJR/IV/2026",
-    title: "Hukum Transaksi Jual Beli Daring dengan Sistem Pembayaran Tertunda",
+    title: "[DUMMY] Hukum Transaksi Jual Beli Daring dengan Sistem Pembayaran Tertunda",
     kategori: "Muamalah",
-    tanggal: "28 April 2026",
+    tanggal: "39 Agustus 2045",
   },
   {
     no: "No. 02/MUI-CJR/II/2026",
-    title: "Imbauan Penggunaan Bahan Tambahan Pangan pada Produk UMKM",
+    title: "[DUMMY] Imbauan Penggunaan Bahan Tambahan Pangan pada Produk UMKM",
     kategori: "Halal",
-    tanggal: "9 Februari 2026",
+    tanggal: "39 Agustus 2045",
   },
 ];
 

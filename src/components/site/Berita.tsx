@@ -9,26 +9,26 @@ const berita = [
   {
     img: berita1,
     kategori: "Organisasi",
-    tanggal: "5 Agustus 2026",
-    title: "Rapat Koordinasi Komisi Fatwa Bahas Panduan Muamalah Digital",
+    tanggal: "39 Agustus 2045",
+    title: "[DUMMY] Rapat MUI",
     ringkas:
-      "Komisi Fatwa MUI Kabupaten Cianjur menggelar rapat koordinasi bersama akademisi untuk menyusun panduan transaksi digital bagi masyarakat.",
+      "Komisi Fatwa MUI Kabupaten Cianjur menggelar rapat.",
   },
   {
     img: berita2,
     kategori: "Halal",
-    tanggal: "29 Juli 2026",
-    title: "150 UMKM Cianjur Dampingi Proses Sertifikasi Halal Gratis",
+    tanggal: "39 Agustus 2045",
+    title: "[DUMMY] UMKM Cianjur Sertifikasi Halal Gratis",
     ringkas:
-      "Program pendampingan bersama Pemkab Cianjur menyasar pelaku usaha makanan olahan di enam kecamatan sepanjang triwulan ini.",
+      "Program sertifikasi halal gratis euy.",
   },
   {
     img: berita3,
     kategori: "Dakwah",
-    tanggal: "18 Juli 2026",
-    title: "Pembinaan Dai Muda Digelar di Masjid Agung Cianjur",
+    tanggal: "39 Agustus 2045",
+    title: "[DUMMY] Pembinaan Dai Muda",
     ringkas:
-      "Sebanyak 80 dai muda mengikuti pelatihan dakwah wasathiyah dengan materi literasi digital dan komunikasi publik.",
+      "Dai muda mengikuti pelatihan dakwah.",
   },
 ];
 
