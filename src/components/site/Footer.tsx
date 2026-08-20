@@ -1,4 +1,5 @@
-import { Facebook, Instagram, Mail, MapPin, Moon, Phone, Youtube } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react";
+import logoMui from "@/assets/logo-mui.webp";
 
 const kolomLayanan = [
   "Fatwa & Konsultasi Syariah",
@@ -21,7 +22,11 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white/10 text-white">
-                <Moon className="h-5 w-5" aria-hidden />
+                <img
+                  src={logoMui}
+                  alt="Logo Majelis Ulama Indonesia"
+                  className="h-full w-full" />
+                {/* <Moon className="h-5 w-5" aria-hidden /> */}
               </span>
               <span className="font-[family-name:var(--font-display)] text-lg font-bold text-white">
                 MUI Cianjur
